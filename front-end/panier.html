@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- favicon-->
+    <link rel="shortcut icon" type="image/png" href="../back-end/images/favicon.png"/>
+
+    <title>Orinoco</title>
+  </head>
+  <body>
+    <!-- Header + nav menu-->
+    <div class="bg-white"> 
+      <div class="container-fluid ps-5">
+        <div class="row">
+          <nav class="col navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="../back-end/images/logo-Orinoco.png" alt="logo-Orinoco" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse mx-4">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link nav-head" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="panier.html">Panier</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article empty basket -->
+    <article id="emptyBasket">
+      <div class="container">
+        <div class="row">
+          <div class="col p-5 text-center text-secondary rounded shadow">
+            <h1>Votre panier Orinoco est vide.</h1>
+            <a class="btn btn-secondary mt-4" href="index.html" role="button">Continuez vos achats</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Table basket -->
+    <div class="col-lg mt-5 mx-5">
+      <div class="table-responsive">
+        <table class="table table-shopping">
+          <thead>
+            <tr>
+              <th class="text-center">Produit</th>
+              <th class="text-center">Nom</th>
+              <th class="text-center">Objectif</th>
+              <th class="text-center">Quantité</th>
+              <th class="text-center">Prix</th>
+              <th class="text-center">Sous-total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="w-25">
+                <img src="../back-end/images/vcam_4.jpg" class="img-fluid rounded" alt="Minolta XG-9">
+              </td>
+              <td class="text-center align-middle">
+                Minolta XG-9
+              </td>
+              <td class="text-center align-middle">
+                Red
+              </td>
+              <td class="text-center align-middle">
+                <button type="button" class="btn btn-danger btn-round btn-sm btn-minus">
+                  <span>-</span>
+                </button>
+                <span class="mx-3">1</span>
+                <button type="button" class="btn btn-success btn-round btn-sm btn-plus">
+                  <span>+</span>
+                </button>
+              </td>
+              <td class="td-number text-center align-middle">
+                599.00€
+              </td>
+              <td class="td-number text-center align-middle bg-light">
+                599.00€
+              </td>
+            </tr>
+              <td colspan="4">
+              </td>
+              <td class="td-total text-center align-middle bg-light">
+                Total:
+              </td>
+              <td class="td-price text-center align-middle bg-light">
+                599.00€
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="container d-flex justify-content-center mt-5">
+      <button type="button" class="btn btn-success btn-round me-4">Validez le panier</button>
+      <button type="button" class="btn btn-danger btn-round">Videz le panier</button>
+    </div>
+
+    <!-- Form -->
+    <form class="row g-3 mt-5 mx-5">
+      <div class="col-md-4">
+        <label for="inputFirstName" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="inputFirstName" placeholder="Orinoco" required>
+      </div>
+      <div class="col-md-4">
+        <label for="inputName" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Orinoco" required>
+      </div>
+      <div class="col-4">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="orinoco@mail.fr" required>
+      </div>
+      <div class="col-6">
+        <label for="inputAddress" class="form-label">Adresse</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="15 Rue Orinoco" required>
+      </div>
+      <div class="col-md-3">
+        <label for="inputCity" class="form-label">Ville</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Paris, Lyon ..." required>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck" required>
+          <label class="form-check-label" for="gridCheck">
+            Accepter les conditions de vente
+          </label>
+        </div>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-success">Confirmez la commande</button>
+      </div>
+    </form>
+
+    <!-- Footer-->
+    <footer class="bg-light text-center text-lg-start mt-5">
+      <div class="text-center pt-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        <a href="index.html">Accueil</a>&nbsp
+        <a href="mailto:orinoco@gmail.com">Contact</a>&nbsp
+        <a href="#">Mentions légales</a>
+      </div>
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright: Orinoco
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

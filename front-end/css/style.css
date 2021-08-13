@@ -1,0 +1,76 @@
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  font-size: 2rem;
+}
+
+/* Carousel */
+@media screen and (max-width: 768px) {
+  #carousel-home {
+    display: none;
+  }
+}
+.carousel {
+  height: 80%;
+  width: 80%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 100px;
+  color: #6C757D;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 100px;
+  color: #6C757D;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #6C757D;
+  height: 10px;
+  width: 5%;
+}
+
+/* Cards */
+#card-container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* input quantity product */
+/* buttons add/remove Qty basket */
+.btn-minus {
+  height: 30px;
+  width: 30px;
+}
+.btn-minus span {
+  color: white;
+}
+
+.btn-plus {
+  height: 30px;
+  width: 30px;
+}
+.btn-plus span {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
